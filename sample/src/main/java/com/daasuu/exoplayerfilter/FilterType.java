@@ -44,7 +44,7 @@ public enum FilterType {
     GAUSSIAN_FILTER("高斯模糊"),
     GRAY_SCALE("灰度"),
     HAZE("薄雾"),
-    INVERT("倒置"),
+    INVERT("反色"),
     MONOCHROME("单色画"),
     SEPIA("深褐色"),
     SHARP("尖锐"),
