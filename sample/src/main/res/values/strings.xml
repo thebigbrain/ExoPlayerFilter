@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">视频过滤</string>
+    <string name="app_name">视频滤镜</string>
     <string name="play">开始</string>
     <string name="pause">暂停</string>
 </resources>
