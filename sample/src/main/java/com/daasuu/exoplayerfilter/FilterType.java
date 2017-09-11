@@ -34,25 +34,33 @@ import java.util.List;
  */
 
 public enum FilterType {
-    DEFAULT,
-    BILATERAL_BLUR,
-    BOX_BLUR,
-    TONE_CURVE_SAMPLE,
-    LOOK_UP_TABLE_SAMPLE,
-    BULGE_DISTORTION,
-    CGA_COLORSPACE,
-    GAUSSIAN_FILTER,
-    GRAY_SCALE,
-    HAZE,
-    INVERT,
-    MONOCHROME,
-    SEPIA,
-    SHARP,
-    VIGNETTE,
-    FILTER_GROUP_SAMPLE,
-    SPHERE_REFRACTION,
-    BITMAP_OVERLAY_SAMPLE;
+    DEFAULT("原片"),
+    BILATERAL_BLUR("双向模糊"),
+    BOX_BLUR("方形模糊"),
+    TONE_CURVE_SAMPLE("曲线"),
+    LOOK_UP_TABLE_SAMPLE("查找"),
+    BULGE_DISTORTION("膨胀变形"),
+    CGA_COLORSPACE("注册色彩"),
+    GAUSSIAN_FILTER("高斯模糊"),
+    GRAY_SCALE("灰度"),
+    HAZE("薄雾"),
+    INVERT("倒置"),
+    MONOCHROME("单色画"),
+    SEPIA("深褐色"),
+    SHARP("尖锐"),
+    VIGNETTE("晕映"),
+    FILTER_GROUP_SAMPLE("滤波器样本"),
+    SPHERE_REFRACTION("球面折射"),
+    BITMAP_OVERLAY_SAMPLE("贴图");
+    private String value;
 
+    FilterType(String value){
+        this.value = value;
+    }
+
+    public String getValue(){
+        return this.value;
+    }
 
     public static List<FilterType> createFilterList() {
         List<FilterType> filters = new ArrayList<>();

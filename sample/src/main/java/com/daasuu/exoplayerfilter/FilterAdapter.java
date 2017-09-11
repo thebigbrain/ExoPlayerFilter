@@ -44,7 +44,8 @@ public class FilterAdapter extends ArrayAdapter<FilterType> {
         }
 
         ViewHolder holder = (ViewHolder) rowView.getTag();
-        String s = values.get(position).name();
+//        String s = values.get(position).name();
+        String s = values.get(position).getValue();
         holder.text.setText(s);
 
         return rowView;
