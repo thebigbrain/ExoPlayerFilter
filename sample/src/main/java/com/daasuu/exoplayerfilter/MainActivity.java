@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
         // Produces Extractor instances for parsing the media data.
         ExtractorsFactory extractorsFactory = new DefaultExtractorsFactory();
         // This is the MediaSource representing the media to be played.
-        MediaSource videoSource = new ExtractorMediaSource(Uri.parse(Constant.STREAM_URL_MP4_VOD_LONG), dataSourceFactory, extractorsFactory, null, null);
+        MediaSource videoSource = new ExtractorMediaSource(Uri.parse(Constant.STREAM_URL_MP4_VOD_SHORT), dataSourceFactory, extractorsFactory, null, null);
 
         // SimpleExoPlayer
         player = ExoPlayerFactory.newSimpleInstance(this, trackSelector);
